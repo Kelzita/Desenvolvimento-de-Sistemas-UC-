@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Tabelas</title>
+</head>
+<body>
+    <center><h1>ALINHAMENTO DE TABELA E CÉLULAS</h1></center><!--Alinhamento da tabela (centralizar, esquerda, ou direita); Pode tambem centralizar 
+    textos dentro da tabela-->
+    <table border="1" align="center">
+    <tr>
+        <td>Primeira Célula</td>
+        <td>Segunda Célula</td>
+        <td>Terceira Célula</td>
+    </tr>
+        <tr>
+            <td align="center">Centro</td><!--Como podemos ver nesse caso, ele centraliza o texto dentro da linha-->
+            <td align="left">Esquerda</td><!--Como podemos ver nesse caso, ele joga o contéudo(texto) do para a esquerda -->
+            <td align="right">Direita</td><!--Como podemos ver nesse caso, ele joga o contéudo(texto) do para a direita-->
+        </tr>
+    </table>
+    <br>
+    <br>
+    <center><h1>Uso do CELLSPACING</h1></center><!--Espaçamento entre a célula e a tabela-->
+    <table border="1" width="80%" cellspacing="30" align="center">
+        <td width="33%" align="center">Coluna 1</td>
+        <td width="33%" align="center">Coluna 2</td>
+        <td width="34%" align="center">Coluna 3</td>
+
+    </table>
+    <br>
+    <br>
+    <center><h1>Uso do CELLPADDING</h1></center><!--Espaçamento entre o texto e a célula-->
+    <table border="1" width="80%" cellpadding="24" align="center">
+        <td width="33%" align="center">Aluno</td>
+        <td width="33%" align="center">Professor</td>
+        <td width="34%" align="center">Téc. Desenv</td>
+
+    </table>
+    <br>
+    <br>
+    <center><h1>Uso do ROWSPAN</h1></center><!--O ROWSPAN une linhas de uma tabela-->
+    <table border="3" width="90%" cellpadding="7" align="center">
+    <tr>
+        <td width="16%" rowspan="3">3 Linhas</td>
+        <td width="16%" >L1 - Coluna 2</td>
+        <td width="16%" >L1 - Coluna 3</td>
+        <td width="17%">L1 - Coluna 4</td>
+        <td width="17%" >L1 - Coluna 5</td>
+    </tr>
+    <tr>
+        <td width="16%" >L2 - Coluna 2</td>
+        <td width="16%" >L2 - Coluna 3</td>
+        <td width="17%">L2 - Coluna 4</td>
+        <td width="17%" >L2 - Coluna 5</td>
+    </tr>
+    <tr>
+        <td width="16%" >L3 - Coluna 2</td>
+        <td width="16%" >L3 - Coluna 3</td>
+        <td width="17%">L3 - Coluna 4</td>
+        <td width="17%" >L3 - Coluna 5</td>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <center><h1>Uso do COLSPAN</h1></center><!-- O COLSPAN une as colunas de uma tabela-->
+    <table border="3" width="80%" cellpadding="7" align="center">
+    <tr>
+        <td width="24%" colspan="3">Célula com 3 colunas</td>
+        <td width="20%" >L1 - Coluna 4</td>
+        <td width="20%" >L1 - Coluna 5</td>
+    </tr>
+    <tr>
+        <td width="16%" bgcolor="green">L2 - Coluna 1</td>
+        <td width="16%" bgcolor="blue">L2 - Coluna 2</td>
+        <td width="17%" bgcolor="yellow">L2 - Coluna 3</td>
+        <td width="24%" colspan="3">Célula com 2 colunas</td>
+    </tr>
+    </table>
+    <br><br>
+    <center>
+    <adress>
+        Raquel Fernandes / Estudante / raquel_f_brito@estudante.sesisenai.org.br
+  </adress>
+</center>
+    
+    
+</body>
+</html>
