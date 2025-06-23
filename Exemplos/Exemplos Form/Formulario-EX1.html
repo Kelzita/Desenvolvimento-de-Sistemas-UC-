@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Formulario</title>
+</head>
+<body>
+    <!--Formulário de tipo texto-->
+    <form method="post" action="/cgi-btn/post-query">
+        Qual o seu primeiro nome?
+        <input type="text" name="primeiro-nome" value="carlos" size="10" maxlength="15">
+    </form>
+    <br><br>
+    
+    <!--Formulário tipo senha-->
+    <form method="post" action="/cgi-btn/post-query">
+        Informe sua senha de acesso (8 caracteres):
+        <input type="password" name="sua_senha" value="xpto" size="8" maxlength="8">
+    </form>
+    <br><br>
+
+    <!--formulário tipo hidden-->
+    <form method="post" action="/cgi-bin-post-query">
+        Você não pode visualizar nada aqui embaixo.
+        <input TYPE="hidden"NAME="nome_oculto" VALUE="form12">
+    </form>
+    <br><br>
+
+    <!--Formulário com TextArea - Área de Texto-->
+    <form method="post" action="/cgi-bin-post-query">
+        Por favor, escreva aqui sugestões, dúvidas e críticas:<br>
+        <textarea name="critica" rowspan="3" cols="40">
+            Gostaria de saber mais informações sobre
+            este servidor, Grato.
+        </textarea>
+    </form>
+    <br><br>
+
+    <!--Formulário com Select para seleção-->
+    <form method="post" action="/cgi-bin-post-query">
+        Onde você pretende fazer turismo nas férias?<br>
+        <select name="lugares_para_ver">
+            <option>Fortaleza</option>
+            <option value="sul">Florianópolis ou Porto Alegre</option>
+            <option>Rio de Janeiro</option>
+            <option>Brasília</option>
+            <option value="amazonia">Manaus</option>
+        </select>
+    </form>
+    <br><br>
+
+    <!--Formulário com Select para seleção ( Com campos já pré-selecionados )-->
+    <form method="post" action="/cgi-bin-post-query">
+        Que facilidades de acomodação você deseja?<br>
+            <select name="opcional" multiple size="5">
+                <option>Televisão</option>
+                <option value="casal" selected>Cama de casal</option>
+                <option>Ar condicionado</option>
+                <option >Fax</option>
+                <option selected>Modem V.34</option>
+                <option>Sauna</option>
+                <option>Lavanderia</option>
+                <option>Frigo-Bar</option>
+        </select>
+    </form>
+    <br><br>
+
+    <!--Formulário de Checklist-->
+    <form action="/action_page.php">
+        <p>Quais veiculos você tem?</p>
+        <input type="checkbox" name="veiculo1" value="Bike"/>Eu tenho uma Bike<br>
+        <input type="checkbox" name="veiculo2" value="Carro"/>Eu tenho um Carro<br>
+        <input type="checkbox" name="veiculo3" value="Barco"/>Eu tenho um Barco<br><br>
+        <input type="Submit"value="Submit"/><br>
+    </form>
+
+    <!--Fomulário-->
+    <form action="/action_page.php">
+        <p>Por favor selecione o seu gênero</p>
+        <input type="radio" name="genero" value="masculino"/>Masculino<br>
+        <input type="radio" name="genero" value="feminino"/>Feminino<br>
+        <input type="radio" name="genero" value="outro"/>Outro<br><br>
+
+        <p>Por favor selecione a sua idade</p>
+        <input type="radio" name="idade" value="30"/>0 - 30<br>
+        <input type="radio" name="idade" value="60"/>31 - 60<br>
+        <input type="radio" name="idade" value="100"/>61 - 100<br><br>
+
+        <input type="Submit"value="Submit"/><br>
+    </form>
+    <br><br>
+
+    <!--Formulário Email/Senha com Reset - para limpar os campos e Submit - Para enviar as informações obtidas -->
+    <form action="/action_page.php">
+        
+        <p>Insira seu Email e Senha</p>
+        <!--<label>Email: </label>-->
+        Email: <input type="email" name="email"/><br><br>
+         <!--<label>Pin: </label>-->
+        Pin: <input type="password" name="pin"/><br><br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">         
+</body>
+</html>
