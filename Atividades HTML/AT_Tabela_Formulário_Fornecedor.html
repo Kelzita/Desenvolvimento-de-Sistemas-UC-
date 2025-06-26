@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Fornecedor</title>
+    <link rel="stylesheet" type="text/css" href="../css/StyleFornecedores.css"
 </head>
-
+<header>
+    <span id="menu-btn" class="menu-icon">&#9776;</span>
+    <img src="../Exemplos/img/logo.png"/>
+</header>
 
     <body align="center">
     <div>
-        <h1>Formulário de Cadastro - Fornecedor</h1>
+        <h1 class="titulo">Formulário de Cadastro - Fornecedor</h1>
     </div>
     <div align="center">
-        <form action="lista" method="POST">
+        <form class="formulario-cadastro" action="lista" method="POST">
+        <a href="gestaodeFornecedor.html" class="voltar"></a>
+        <img class="seta" src="img/btn_voltar.png" title="seta"></a>
         <table bgcolor="white" cellpadding="5" cellspacing="0">
             <tr>
                 <td rowspan="2" align="center">
-                    <img src="../Exemplos/img/logo.png" alt="logo" width="80px" height="80px">   
+                    <img class="imagem" src="../Exemplos/img/logo.png" alt="logo" width="80px" height="80px">   
                 </td>
             </tr>
             <tr>
@@ -25,43 +31,43 @@
             </tr>
 
             <tr>
-                <th><img src="../Exemplos/img/user.png" width="20px" height="15px">Nome do Fornecedor:</th>
+                <th><img class="imagem" src="../Exemplos/img/user.png" width="20px" height="15px">Nome do Fornecedor:</th>
                 <td><input type="text" name="Nome_Fornecedor" placeholder="Insira o nome do fornecedor" width="20px">
                 </td>
             </tr>
             <tr>
-                <th><label for="cnpj"><img src="../Exemplos/img/CNPJ.png" width="20px" height="15px">CNPJ:</th></label>
+                <th><label for="cnpj"><img class="imagem" src="../Exemplos/img/CNPJ.png" width="20px" height="15px">CNPJ:</th></label>
                 <td><input type="text" name="CNPJ" placeholder="Insira o CNPJ" maxlength="14"></td>
             </tr>
             <tr>
 
-                <th><img src="../Exemplos/img/phone.png" width="20px" height="15px"><label>Telefone:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/phone.png" width="20px" height="15px"><label>Telefone:</label></th>
                 <td><input type="tel" name="telefone" placeholder="(00) 00000-0000" maxlength="15"></td>
             </tr>
             <tr>
-                <th><img src="../Exemplos/img/email.png" width="20px" height="15px"><label>Email:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/email.png" width="20px" height="15px"><label>Email:</label></th>
                 <td><input type="email" name="email" placeholder="Insira o Email"></td>
             </tr>
             
-            <th><img src="../Exemplos/img/rua.png" width="20px" height="15px"><label>Rua:</label></th>
+            <th><img class="imagem" src="../Exemplos/img/rua.png" width="20px" height="15px"><label>Rua:</label></th>
             <td colspan="4"><input type="text" name="rua" placeholder="Insira a Rua"></td>
             </tr>
             <tr>
-                <th><img src="../Exemplos/img/numero.png" width="20px" height="15px"><label>Número:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/numero.png" width="20px" height="15px"><label>Número:</label></th>
                 <td colspan="4"><input type="text" name="numero" placeholder="Insira o Número"></td>
             </tr>
 
             <tr>
-                <th><img src="../Exemplos/img/bairro.png" width="20px" height="15px"><label>Bairro:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/bairro.png" width="20px" height="15px"><label>Bairro:</label></th>
                 <td colspan="4"><input type="text" name="bairro" placeholder="Insira o Bairro"></td>
             </tr>
 
             <tr>
-                <th><img src="../Exemplos/img/cidade.png" width="20px" height="15px"><label>Cidade:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/cidade.png" width="20px" height="15px"><label>Cidade:</label></th>
                 <td colspan="4"><input type="text" name="cidade" placeholder="Insira a Cidade"></td>
             </tr>
              <tr>
-                <th><img src="../Exemplos/img/UF.png" width="20px" height="15px"><label>UF:</label></th>
+                <th><img class="imagem" src="../Exemplos/img/UF.png" width="20px" height="15px"><label>UF:</label></th>
                 <td colspan="4">
                     <select name="uf">
                         <option value="" disabled selected>Selecione o estado</option>
@@ -98,7 +104,7 @@
             <tr>
                 <td colspan="3" align="center">
                     <br>
-                    <button type="submit">Cadastrar Fornecedor</button>
+                    <button class="btn-cadastrar" type="submit">Cadastrar Fornecedor</button>
                 </td>
             </tr>
         </table>
@@ -106,7 +112,7 @@
 </form>
     <br><br>
     <center>
-        <adress>
+        <adress class="adress">
               Raquel Fernandes / Estudante / raquel_f_brito@estudante.sesisenai.org.br
         </adress>
      </center>
